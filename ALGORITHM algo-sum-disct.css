@@ -1,0 +1,36 @@
+ALGORITHM algo-sum-distinct
+VAR
+   // declaring hash table
+   htab1,htab2 : HASH_TABLE<INTEGER,INTEGER>;
+   // HASH_TABLE<Key_type,Value_type>
+   i,j: INTEGER
+BEGIN
+
+FOR i FROM 0 TO htab1.lenght-1 DO 
+   htab.insert(i,htab1[i])
+   Write(htab1);
+   FOR j FROM 0 TO htab2.lenght-1 DO 
+   htab.insert(j,htab1[j])
+   
+   Write(htab2);
+
+IF htab1.length =htab2.length 
+FOR k FROM 0 TO htab1.length-1 DO
+IF htab1.get (k)<> htab2.get(k)
+sum:= htab1.get (k)+ htab2.get(k)
+END IF 
+END FOR 
+WRITE (sum)
+IF htab1.length <> htab2.length
+FOR k FROM 0 TO MAX(htab1.lenght, htab2.lenght)
+  IF htab1.lookup (k) TRUE  
+   DO
+  sum:=sum+htab1.lookup (k)
+  ELSE IF htab2. lookup(k) TRUE 
+  sum:=sum+htab2.lookup (k)
+END IF 
+END FOR 
+WRITE (sum)
+
+END
+
